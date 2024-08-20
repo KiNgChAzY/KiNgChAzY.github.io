@@ -1,1 +1,0 @@
-# KiNgChAzY.github.io
