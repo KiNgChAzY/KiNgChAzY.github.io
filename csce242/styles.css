@@ -52,12 +52,14 @@ a { /* change the appearance of ALL links */
     margin-left: 100px;
     justify-content: center;
     }
+
 .about img {
     width: 150px;
     height: 200px;
     border-radius: 25%;
-    border: 2px solid rgb(126, 14, 201);
+    border: 2px solid rgb(0, 0, 0);
     }
+
 .about p {
     width:50%;
     text-align: center;
