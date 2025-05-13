@@ -1,0 +1,21 @@
+/* Structure */
+body{
+    background: skyblue;
+}
+
+/*Tables*/
+table{
+    border-collapse: collapse;
+}
+th{
+    background: grey;
+}
+td, th{
+    border: 1px solid maroon;
+    padding: 5px;
+}
+
+/*Typograhy */
+h1 {
+    color: aquamarine;
+}
