@@ -1,3 +1,25 @@
 h1{
     color: green;
 }
+h2{
+
+}
+h3{
+
+}
+body{
+    border-collapse:collapse ;
+    background: lightgrey;
+}
+
+table{
+    border: 1px solid black;
+    background: violet;
+}
+th{
+    background-color: blueviolet;
+}
+
+th, td{
+    border: 1px solid black;
+}
