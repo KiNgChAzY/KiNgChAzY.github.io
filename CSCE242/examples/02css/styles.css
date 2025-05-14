@@ -1,0 +1,66 @@
+/*Structure*/
+body{
+    background: url(images/Safari-Background.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    width: 80%;
+    margin: auto; /*center*/
+                  /*can also do "padding-left: 20px;" etc.*/
+
+}
+
+header, footer{
+    background: burlywood;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0; /*means 10xp top and bottom and 0 left and right*/
+}
+
+#main-content{
+    padding: 5px;
+    border: 1px solid black;
+    background: ivory;
+}
+
+/*Pictures*/
+.giraffe-pic {/*. for class*/
+    background: wheat;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 20px 5px 10px;
+    border-radius: 5px;
+    margin: 10px auto 20px;
+    color: black;
+    box-shadow: 5px 5px gray;
+}
+
+/*Navigation*/
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#mainheader-nav li{
+    display: inline-block;
+}
+
+#mainheader-nav a{
+    text-decoration: none;
+    background: ivory;
+    color: black;
+    padding: 5px;
+    border-radius: 5px; /*Rounded corners*/
+}
+
+#mainheader-nav a:hover {
+    background: wheat;
+    color: black;
+}
+
+/*Typography*/
+header h1, header h2, footer p{
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+/*Structure*/
+body{
+    border-collapse:collapse ;
+    background: rgb(134, 124, 124);
+}
+
+table{
+    border: 1px solid black;
+    background: rgb(83, 83, 83);
+}
+th{
+    background-color: rgb(198, 179, 215);
+}
+
+th, td{
+    border: 1px solid black;
+}
+
+a{
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}

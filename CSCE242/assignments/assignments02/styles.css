@@ -1,0 +1,24 @@
+h1, h2{
+    background-color: rgb(112, 0, 0);
+    color: aliceblue;
+}
+h2{
+    color: aliceblue
+}
+body{
+    background: black;
+}
+table{
+    border-collapse:collapse;
+}
+th, td{
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    
+}
+th{
+    background: rgb(112, 0, 0);
+}
+a{
+    
+}
