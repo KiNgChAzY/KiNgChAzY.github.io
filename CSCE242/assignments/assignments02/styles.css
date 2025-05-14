@@ -1,24 +1,107 @@
-h1, h2{
-    background-color: rgb(112, 0, 0);
-    color: aliceblue;
-}
+/*Structure*/
+
 h2{
-    color: aliceblue
+    color: aliceblue;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
 }
+
+#slogan{
+    font-size: 18px;
+    text-decoration:underline;
+}
+
 body{
     background: black;
 }
+
 table{
     border-collapse:collapse;
 }
+
 th, td{
     border: 1px solid aliceblue;
-    color: aliceblue;
-    
+    color: aliceblue; 
 }
+
 th{
     background: rgb(112, 0, 0);
 }
-a{
-    
+
+#main h1{
+    background: rgb(112, 0, 0);
+    color: aliceblue;
+    width: 20%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid aliceblue;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#Avg-homes table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+#Avg-homes{
+    text-align: center;
+
+}
+
+#Avg-homes h2{
+    border: 1px solid aliceblue;
+    background: rgb(112, 0, 0);
+
+}
+
+.Diff-pgs{
+    text-align: center;
+}
+
+.Diff-pgs a{
+    text-decoration: none;
+    background: black;
+    color:aliceblue;
+    border-radius: 10px;
+    padding: 0 1px;
+    margin: 2px;
+}
+
+.Diff-pgs a:hover {
+    background: aliceblue;
+    color: rgb(112, 0, 0);
+}
+
+#main-main p{
+    text-align: center;
+    color: aliceblue;
+}
+
+#for-p{
+    border: 2px solid rgb(112, 0, 0);
+    border-radius: 5px;
+    padding: 1px;
+    margin: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main h1{
+    text-align: center;
+}
+
+/*Pictures*/
+.pics {
+    background: rgb(112, 0, 0);
+    text-align: center;
+    width: 25%;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    color: black;
 }

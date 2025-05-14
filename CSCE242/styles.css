@@ -1,6 +1,6 @@
 /*Structure*/
 h1{
-    color: green;
+    color: rgb(255, 255, 255);
 }
 h2{
 
@@ -10,19 +10,63 @@ h3{
 }
 body{
     border-collapse:collapse ;
-    background: lightgrey;
+    background: rgb(59, 58, 58);
+    color: rgb(255, 255, 255);
 }
 
 table{
     border: 1px solid black;
-    background: violet;
+    background: black;
 }
 th{
-    background-color: blueviolet;
+    background-color: black;
 }
 
 th, td{
     border: 1px solid black;
+}
+
+#main-assignments ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#main-assignments a{
+    text-decoration: none;
+    background: rgb(59, 58, 58);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#title{
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    background: url(imagecsce242/Stromy-sky.jpg)
+}
+
+#About h4{
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    background: url(imagecsce242/Stromy-sky.jpg)
+}
+#About p{
+    text-align: start;
+}
+
+#Assignments h2{
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    background: url(imagecsce242/Stromy-sky.jpg)
+
+}
+
+#Assignments a{
+    text-decoration: none;
+    background: rgb(59, 58, 58);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#Assignments ul{
+    list-style-type: none;
 }
 /*Pictures*/
 
