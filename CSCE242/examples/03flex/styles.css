@@ -1,0 +1,140 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgrey;
+}
+
+#content{
+
+}
+
+header, .main-area, footer{
+    padding: 5px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 5px;
+}
+
+#content{
+    text-align: center;
+    color: pink;
+}
+.area1{
+    background-color: black;
+    color: aqua;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: auto;
+    margin: auto;
+}
+.area1 img{
+    display: block;/*turns image to a block level element*/
+    margin: auto;
+}
+
+#side-adv{
+    background: bisque;
+    padding: 5px;
+    border-radius: 5px;
+}
+/*gallery*/
+#gallery div{
+    text-align: left;
+}
+#gallery section{
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+/*images*/
+img{
+    max-width: 100%;
+}
+
+/* Navigation */
+
+
+
+/* Typography */
+
+
+
+
+/* Media Queries */
+/* Portrait Tablet */
+@media screen and (min-width: 600px) {
+    body{
+        background-color: bisque;
+    }
+    #content{
+        text-align: center;
+        color: green;
+    }
+    .area1{
+        background-color: black;
+        color: aqua;
+        border: 2px solid whitesmoke;
+        border-radius: 5px;
+        padding: auto;
+        margin: auto;
+    }
+    #gallery{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #gallery section{
+        max-width: 20%;
+
+    }
+
+    .one{
+        flex: 1;   /*can do % like 20% and 80%*/
+    }
+    .two{
+        flex: 2;   
+    }
+    .three{
+        flex: 3;   
+    }
+    .four{
+        flex: 4;   
+    }
+}
+
+/* Landscape Tablet */
+@media screen and (min-width: 768px) {
+    body{
+        background-color: cadetblue;
+    }
+    header, .main-area, footer{
+        width: 85%;
+        margin: 10px auto; /*so it appilped to everthing below6*/
+    }
+    /*Columns*/
+    .columns{
+        display: flex;
+    }
+
+    .area1{
+        margin: 0 7px 7px;
+    }
+}
+
+/* Labtop / Desktop */
+@media screen and (min-width: 992px) {
+    body{
+        background-color: coral;
+    }
+    header, .main-area, footer{
+        width: 70%; 
+        margin: 10px auto;/*Dont need this because of above*/
+    }
+}
+
+/* Extra Large Devices */
+@media screen and (min-width: 1600px) {
+    body{
+        background-color: brown;
+    }
+}

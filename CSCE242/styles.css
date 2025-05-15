@@ -1,42 +1,41 @@
 /*Structure*/
-h1{
+h1, h2, h3{
     color: rgb(255, 255, 255);
 }
 h2{
-
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    background: url(imagecsce242/Stromy-sky.jpg)
 }
-h3{
 
-}
 body{
     border-collapse:collapse ;
     background: rgb(59, 58, 58);
     color: rgb(255, 255, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-table{
-    border: 1px solid black;
-    background: black;
-}
-th{
-    background-color: black;
-}
-
-th, td{
-    border: 1px solid black;
-}
-
-#main-assignments ul{
-    list-style-type: none;
+footer{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background: url(imagecsce242/Stromy-sky.jpg);
+    margin: 0;
     padding: 0;
 }
-
-#main-assignments a{
+a{
     text-decoration: none;
-    background: rgb(59, 58, 58);
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 0 1px;
+    margin: 2px;
 }
+
+img{
+    display: block;/*turns image to a block level element*/
+    margin: auto;
+}
+
 #title{
     text-align: center;
     border: 2px solid rgb(255, 255, 255);
@@ -46,27 +45,21 @@ th, td{
 #About h4{
     text-align: center;
     border: 2px solid rgb(255, 255, 255);
-    background: url(imagecsce242/Stromy-sky.jpg)
+    background: url(imagecsce242/Stromy-sky.jpg);
 }
 #About p{
     text-align: start;
 }
-
-#Assignments h2{
-    text-align: center;
-    border: 2px solid rgb(255, 255, 255);
-    background: url(imagecsce242/Stromy-sky.jpg)
-
-}
-
-#Assignments a{
-    text-decoration: none;
-    background: rgb(59, 58, 58);
+#assignments section{
+    background: url(imagecsce242/Stromy-sky.jpg);
     color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 5px;
+    padding: 0 5px 0 0;
 }
-#Assignments ul{
-    list-style-type: none;
+
+img{
+    max-width: 100%;
 }
 /*Pictures*/
 
@@ -75,3 +68,102 @@ th, td{
 
 
 /*Typography*/
+
+/* Media Queries */
+/* Iphone */
+@media screen and (min-width: 600px) {
+    #assignments{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    }
+    #assignments section{
+        max-width: 20%;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        padding: 0 10px 0px 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+    }
+    #assignments section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    }
+    #About{
+        text-align: center;
+    }
+    /*Columns*/
+    .columns{
+        width: auto;
+        display: flex;
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 750px) {
+        .columns{
+        display: flex;
+    }
+        #assignments{
+    flex-wrap: wrap;
+    }
+    .columns{
+        width: 85%;
+        margin: 10px auto; /*so it appilped to everthing below6*/
+    }
+    #assignmentsS section{
+        min-width: 5%;
+        max-width: 20%;
+        display: flex; /* or display: grid; */
+        flex-direction: column; /* Ensures sections stack vertically */
+        gap: 20px
+    }
+    #About{
+        text-align: center;
+    }
+     /*Columns*/
+    .columns{
+        display: flex;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+        #assignments{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    #assignmentsS section{
+        max-width: 20%;
+
+    }
+    #About{
+        text-align: center;
+    }
+    /*Columns*/
+    .columns{
+        display: flex;
+    }
+}
+
+/* Larger Devices */
+@media screen and (min-width: 1700px) {
+    #assignments{
+    flex-wrap: wrap;
+    justify-content: space-between 5px;
+    }
+    #assignmentsS section{
+        max-width: 20%;
+
+    }
+    #About{
+        text-align: center;
+    }
+        /*Columns*/
+    .columns{
+        display: flex;
+    }   
+}
