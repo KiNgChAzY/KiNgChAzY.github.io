@@ -87,6 +87,14 @@ img{
         max-width: 20%;
 
     }
+        #gallery{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #gallery section{
+        max-width: 20%;
+
+    }
 
     .one{
         flex: 1;   /*can do % like 20% and 80%*/

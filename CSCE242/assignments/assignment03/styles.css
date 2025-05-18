@@ -1,35 +1,315 @@
 /* Structure */
-h1{
+html, body, div, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:tan;
+    color: honeydew;
+    font-family:Arial, Helvetica, sans-serif;
+    max-width: 1550px;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+header li{
+    border: 1px solid tan;
+}
+
+header {
+    background-color: tan;
+    text-align: center;    
+}
+
+main {
+    flex: 1;
+    max-width: 1550px;
+    margin: 0;
+}
+
+footer {
+    background-color: lightcoral;
+    text-align: center;
+    color: honeydew;
+    margin-top: 20px;
+}
+/* Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top*/
+.ideas {
+    display: flex;
+    flex-direction:column;
+    margin: 0;
 
 }
+.idea{
+    padding: 10px 0 10px 0;
+} 
+
+.ideas img{
+    flex: 1;
+    display: flex;
+    max-height: 300px;
+    padding: 50px;
+    max-width: 300px;
+
+}
+
+.idea-on-right {
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    margin: auto;
+
+}
+.idea-on-left {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: auto;
+    margin: auto;
+}
+.idea {
+    flex: 8;
+    background-color: tan;
+    color: honeydew;
+    max-height: 300px;
+}
+
+.idea-on-left div {
+    background-color:darkslategrey ;
+
+}
+
+.idea-on-left, .idea-on-left img {
+    display: auto;
+
+}
+/* Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top*/
+
+/* Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom*/
+.bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+}
+
+.links {
+    display: flex;
+    flex: 4;
+    background-color: lightcoral;
+    padding: 10px;
+    color: honeydew;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+}
+
+.title-column {
+    flex: 1 ;
+    margin: 5px 0 5px 0;
+    background-color: darkslategrey;
+    color: honeydew;
+
+}
+
+.gallery-column {
+    flex: 1;
+    margin-bottom: 10px;
+    background-color: lightblue;
+
+}
+
+.title-column img{
+    display: block;
+    margin: auto;
+}
+
+.gallery-column img{
+    display: block;
+    margin: auto;
+}
+
 /*Pictures*/
+#t-column, #g-column img{
+    min-width: 200px;
+}
 
 
+/* Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top*/
 /*Navigation*/
+nav {
+    background-color: lightcoral;
+    margin-top: 20px;
+}
 
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
 
+nav li {
+    text-align: center;
+}
+.links li{
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    color: honeydew;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: brown;
+}
+/* Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top*/
 /*Typography*/
+h1 {
+    color: darkslategrey;
+    margin-bottom: 10px;
+}
 
 
+.title-header, .gallery-header {
+    padding: 15px;
+    text-align: center;
+}
 
+.title-content, .gallery-content {
+    padding: 10px;
+}
+
+.links h3{
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+
+}
+
+.links ul{
+    text-align: left;
+}
+
+.links a {
+    display: block;
+    color: honeydew;
+    margin-bottom: 5px;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
 
 /* Media Queries */
 /* Iphone */
 @media screen and (min-width: 600px) {
+    .one{
+        flex:1;
+    }
+    .four{
+        flex:4;
+    }
+    .five{
+        flex: 5;
+    }
+
 
 }
 
 /* Tablet */
 @media screen and (min-width: 750px) {
+    nav ul {
+        flex-direction: row;
+    }
+    
+    nav li {
+        flex: 1;
+    }
+    .idea-on-right {
+        flex-direction: row;
+    }
+   
+    .idea-on-right, .idea-on-left {
+        display: flex;
+        flex-direction: row;
+    }
+    .ideas img{
+    flex: 1;
+    width: auto;
+    display: flex;
+    max-height: 300px;
+    padding: 0;
+    }
+/* Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top Top  Top*/
+/* Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom Bottom*/
+    .gallery-column {
+        flex: 1;
+    }
 
+    .idea-on-left {
+    flex-direction: row-reverse;
+    max-height: 300px;
+    }
 }
 
 /* Desktop */
 @media screen and (min-width: 1000px) {
-
+    .bottom-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .links {
+        flex: 20%;
+        flex-direction: column;
+    }
+    
+    .gallery-container {
+        flex: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    /* Title columns (40% of the page, 2 columns) */
+    .title-column {
+        flex: 0 0 calc(50% - 10px);
+        margin: 5px;
+    }
+    
+    /* Gallery columns (40% of the page, 3 columns) */
+    .gallery-column {
+        flex: 0 0 calc(33.33% - 10px);
+        margin: 5px;
+    }
+    
+    .gallery-container {
+        position:relative;
+    }
+    .title-column {
+        order: 1;
+    }
+    .gallery-column {
+        order: 2;
+    }
 }
 
 /* Larger Devices */
 @media screen and (min-width: 1700px) {
-
+    main {
+        max-width: 1500px;
+    }
 }
