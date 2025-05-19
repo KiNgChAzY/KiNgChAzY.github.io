@@ -32,6 +32,7 @@ header, .main-area, footer{
     margin: auto;
 }
 
+
 #side-adv{
     background: bisque;
     padding: 5px;
@@ -51,6 +52,27 @@ header, .main-area, footer{
 img{
     max-width: 100%;
 }
+header{
+    position: relative;
+    min-height: 150px;
+}
+
+
+#logo{
+    border: 2px solid gold;
+    position: absolute;
+    right: 900px;
+
+}
+
+#p{
+    border: 2px solid gold;
+    position:absolute;
+    left: 850px;
+    bottom: 100px;
+}
+
+
 
 /* Navigation */
 
