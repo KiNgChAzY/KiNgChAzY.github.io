@@ -1,12 +1,40 @@
 header{
     color: white;
     text-align: center;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+}
+body{
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    color: var(--white-color);
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background: black;
 }
 a{
     text-decoration: none;
     border-radius: 10px;
     padding: 0 1px;
     margin: 2px;
+    color: inherit;
 }
 img{
     max-width: 100%;;
@@ -16,36 +44,67 @@ section{
 }
 
 a:hover {
-    background: black;
     color: white;
     text-decoration:underline;
 }
+li{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+/* UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER*/
 #head-banner{
-    background-color: red;
+    background-color: #73000A;
     flex-wrap: nowrap;
     flex-direction: row;
-    padding: 20px;
+    padding: 0px;
     margin: 0px;
 }
 #head-banner ul{
     flex-wrap: nowrap;
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    margin:auto;
+    padding: auto;
     list-style: none;
 }
 #head-banner li{
+    top: 35px;
+    margin: auto;
+    padding: auto;
 }
+#logo{
+    position: relative;
+    left: 70px;
+    margin: 0;
+    padding: 0;
+
+}
+#Seach{
+    margin: 0;
+    padding: 0;
+    left: 350px;
+
+}
+/* UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER*/
+
+/* LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER*/
 #lower-banner{
     background-color: black;
+    max-height: 150px;
     flex-wrap: nowrap;
     display: flex;
     flex-direction: row;
     padding: 20px;
     margin: 0px;
 }
+#banner-title{
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+
+}
 #lower-banner ul{
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     padding: 20px;
@@ -53,8 +112,13 @@ a:hover {
 }
 #lower-banner li{
 }
+
+/* LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER*/
+
+/* BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY*/
+
 body{
-    background:url(https://fakeimg.pl/1500x1500);
+    background: url(images/background\ pool.webp);
 }
 /* Media Queries */
 /* Iphone */
@@ -64,22 +128,89 @@ body{
 
 /* Tablet */
 @media screen and (min-width: 750px) {
+    #logo{
+
+    }
     #head-banner{
-    background-color: red;
+    background-color: #73000A; /*when changes*/
     flex-wrap: nowrap;
     display: flex;
     flex-direction: row;
     padding: 20px;
     margin: 0px;
     }
-    #lower-banner li{
-        
+    #head-banner ul{
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        padding: auto;
+        margin: auto;
     }
 
+/* UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER*/
+
+/* LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER*/
+    #banner-title{
+    position: relative;
+    top: 0px;
+    font-size: 16px;
+    }
+    #lower-banner li{
+        margin:  5px;
+    }
+    #main-ul{
+        position: relative;
+        left: 100px;
+    }
 }
 
 /* Desktop */
 @media screen and (min-width: 1000px) {
+    #head-banner{
+    background-color: #73000A;
+    max-height: 150;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0px;
+    }
+    #head-banner li{
+    position: relative;
+    top: -6px;
+    margin: auto;
+    padding: auto;
+
+    }
+    #logo{
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+    }
+    #Seach{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        left: 0px;
+
+    }
+        #head-banner ul{
+        position: unset;
+        padding: auto;
+        margin: auto;
+    }
+/* UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER*/
+
+/* LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER*/
+    #main-ul{
+        position: relative;
+        left: 300px;
+    }
+    #lower-banner li{
+
+        padding: auto;
+    }
+    
 
 }
 
