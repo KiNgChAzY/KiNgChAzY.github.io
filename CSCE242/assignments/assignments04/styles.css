@@ -1,4 +1,7 @@
-header{
+html{
+
+}
+header {
     color: white;
     text-align: center;
     border: 0;
@@ -12,9 +15,9 @@ header{
     font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap;
-
 }
-body{
+
+body {
     border: 0;
     font-family: inherit;
     font-size: 100%;
@@ -27,68 +30,106 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap;
-    background: black;
+    background: #ebebeb;
+    height: 100%;
 }
-a{
+
+a {
     text-decoration: none;
     border-radius: 10px;
     padding: 0 1px;
     margin: 2px;
     color: inherit;
 }
-img{
-    max-width: 100%;;
+
+img {
+    max-width: 100%;
 }
-section{
+
+section {
     margin: 0;
 }
 
 a:hover {
     color: white;
-    text-decoration:underline;
+    text-decoration: underline;
 }
-li{
+
+li {
     margin-left: 2px;
     margin-right: 2px;
 }
+
+.columns {
+    display: flex;
+}
+
+.one {
+    flex: 1;
+}
+
+.two {
+    flex: 2;
+}
+
+.three {
+    flex: 3;
+}
+
+.four {
+    flex: 4;
+}
+
+.five {
+    flex: 5;
+}
+
+
 /* UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER*/
-#head-banner{
+
+#head-banner {
     background-color: #73000A;
     flex-wrap: nowrap;
     flex-direction: row;
     padding: 0px;
     margin: 0px;
 }
-#head-banner ul{
+
+#head-banner ul {
     flex-wrap: nowrap;
     display: flex;
     flex-direction: row;
-    margin:auto;
+    margin: auto;
     padding: auto;
     list-style: none;
 }
-#head-banner li{
+
+#head-banner li {
     top: 35px;
     margin: auto;
     padding: auto;
 }
-#logo{
+
+#logo {
     position: relative;
     left: 70px;
     margin: 0;
     padding: 0;
-
 }
-#Seach{
+
+#Seach {
     margin: 0;
     padding: 0;
     left: 350px;
-
 }
+
+
 /* UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER*/
 
+
 /* LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER*/
-#lower-banner{
+
+#lower-banner {
     background-color: black;
     max-height: 150px;
     flex-wrap: nowrap;
@@ -97,124 +138,759 @@ li{
     padding: 20px;
     margin: 0px;
 }
-#banner-title{
+
+#banner-title {
     position: relative;
     top: 10px;
     font-size: 16px;
-
 }
-#lower-banner ul{
+
+#lower-banner ul {
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     padding: 20px;
     list-style: none;
 }
-#lower-banner li{
+
+#lower-banner li {}
+
+#lower-banner a:hover {
+    color: white;
+    text-decoration: underline solid gray;
 }
+
 
 /* LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER*/
 
+
 /* BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY*/
 
-body{
-    background: url(images/background\ pool.webp);
+#body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 80vh;
+    position: relative;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 20px;
 }
-/* Media Queries */
-/* Iphone */
-@media screen and (min-width: 600px) {
 
+.image-fade-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
-/* Tablet */
-@media screen and (min-width: 750px) {
-    #logo{
+.image-fade-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-    }
-    #head-banner{
-    background-color: #73000A; /*when changes*/
-    flex-wrap: nowrap;
+.image-fade-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    pointer-events: none;
+}
+
+#body-overlay {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#middle {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#section-images {
+    color: white;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#date-links {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: xx-large;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    white-space: wrap;
+}
+
+#date-links p {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+#date-links a {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#date-links a:hover {
+    color: #93000A;
+    text-decoration: none;
+}
+
+#section-images section {
+    flex: 1;
+    margin: 0 1%;
+    text-align: center;
+    flex-direction: row;
+}
+
+#section-images section img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#section-images a:hover {
+    color: #93000A;
+    text-decoration: none;
+}
+
+
+/* SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE*/
+.schedule_list_top {
+    display: flex;
+    border-radius: 12px 12px 0 0;
+    background: #fff;
+    align-items: stretch;
+    min-height: 60px;
+}
+.schedule_list_top time {
+    background: #73000A;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    border-radius: 12px 0 0 0;
+}
+.schedule_list_top_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    align-items: center;
+    gap: 10px;
+}
+.schedule_list_teams {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.schedule_list_image img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+.schedulelist_image_home img {
+    background: #fff;
+}
+.schedule_list_teams span {
+    font-weight: bold;
+}
+.schedule_list_opponent strong {
+    font-weight: bold;
+}
+.schedule_list_location {
+    text-align: left;
+    min-width: 60px;
+    color: #222;
+}
+.schedule_list_location strong {
+    display: block;
+    font-weight: 600;
+}
+.schedule_list_location span {
+    color: #888;
+    font-size: 11px;
+}
+.schedule_list_result {
+    text-align: right;
+}
+.schedule_list_result strong {
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+    display: block;
+
+}
+.schedule_list_bottom {
+    display: flex;
+    align-items: center;
+    background: #f7f7f7;
+    border-radius: 0 0 12px 12px;
+    padding: 0 24px;
+    border-top: 1px solid #e0e0e0;
+    min-height: 24px;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.schedule_list_category {
+    color: #888;
+    font-size: 12px;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    margin: 0px;
+    flex: 4;
+    padding: 5px 0;
+}
+.schedule_list_bottom ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.schedule_list_bottom li {
+    margin: 0;
+}
+.schedule_list_bottom a {
+    color: #73000A;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 12px;
+}
+.schedule_list_bottom a:hover {
+    text-decoration: underline;
+    color: #a0001a;
+}
+#schedule a{
+    color: #73000A;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 12px;
+}
+#schedule a:hover {
+    text-decoration: underline;
+    color: #a0001a;
+}
+
+/* SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE*/
+/* LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY  LOWER BODY*/
+
+#lower-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 80vh;
+    position: relative;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 20px;
+}
+#Lower-Heading{
+    flex-wrap: wrap;
+    font-weight: 2000;
+    font-size: 32px;
+
+}
+#Lower-Heading a{
+    padding-top: 50px;
+    text-align: center;
+    color: #73000A;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 12px;
+}
+#Lower-Heading a:hover {
+    text-decoration: underline;
+    color: #a0001a;
+}
+
+#bot-section-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+}
+
+#bot-section-images section {
+    background: #fff;
+    border-radius: 12px;
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 24px 0;
+    margin: 0;
+    height: 100%;
+}
+
+#bot-section-images section img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 12px;
+}
+
+#bot-section-images section p {
+    color: #73000A;
+    font-size: 15px;
+    margin: 12px 20px 0 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+#bot-section-images section a {
+    color: #111;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 20px 0 20px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1.2;
+    display: block;
+}
+
+#bot-section-images section a:hover {
+    color: #93000A;
+    text-decoration: none;
+}
+
+
+/* LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY  LOWER BODY*/
+
+
+#bot-section-images section a,
+#bot-section-images section p {
+    white-space: normal;
+    word-break: break-word;
+}
+#top-bot-footer{
+    background-color: #80020d;
+    padding: 10px;
+    margin: 0;
+}
+#bot-footer{
+    background-color: #73000a;
+    white-space: normal;
+    word-break: break-word;
+    color: #fff;
+    padding: 10px;
+    padding-left: 50px;
+    margin: 0;
+}
+
+
+/* Media Queries */
+
+
+/* Iphone and small screens */
+
+
+/* Iphone */
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (max-width: 749px) {
+    #body {
+        margin-top: 0 !important;
     }
-    #head-banner ul{
+    #section-images {
+        flex-direction: column;
+    }
+    #section-images section {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #section-images section img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE*/
+    .schedule_list_top {
+
+    }
+/* LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY  LOWER BODY*/
+    #bot-section-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #bot-section-images section {
+        width: 100%;
+        margin: 10px 0;
+    }
+/* LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY  LOWER BODY*/
+    #bot-section-images {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+    #bot-section-images section {
+        width: 100%;
+        margin: 10px 0;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    #bot-section-images section img {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        max-width: 100%;
+    }
+}
+
+/* Tablet and above */
+
+@media screen and (min-width: 750px) {
+    #logo {}
+    #head-banner {
+        background-color: #73000A;
+        /*when changes*/
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        margin: 0px;
+    }
+    #head-banner ul {
         position: absolute;
         top: 150px;
         left: 200px;
         padding: auto;
         margin: auto;
     }
-
-/* UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER*/
-
-/* LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER*/
-    #banner-title{
-    position: relative;
-    top: 0px;
-    font-size: 16px;
+    /* UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER*/
+    /* LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER*/
+    #banner-title {
+        position: relative;
+        top: 0px;
+        font-size: 16px;
     }
-    #lower-banner li{
-        margin:  5px;
+    #lower-banner li {
+        margin: 5px;
     }
-    #main-ul{
+    #main-ul {
         position: relative;
         left: 100px;
     }
+    /* BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY*/
+    #date-links,
+    #section-images {
+        padding: 0 40px;
+    }
+    #section-images section {
+        flex: 1;
+        margin: 0 1%;
+        text-align: center;
+    }
+    #date-links {
+        padding: 0 40px;
+    }
+    /* SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE*/
+    .schedule_list_top {
+        display: flex;
+        border-radius: 12px 12px 0 0;
+        background: #fff;
+        align-items: stretch;
+        overflow: hidden;
+        margin: 24px 0 0 0;
+        min-height: 60px;
+    }
+    .schedule_list_top time {
+        background: #73000A;
+        color: #fff;
+        font-weight: bold;
+        font-size: 11px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        min-width: 120px;
+        text-align: center;
+        padding: 0 16px;
+        border-radius: 12px 0 0 0;
+        font-family: inherit;
+        letter-spacing: 1px;
+    }
+    .schedule_list_top_wrapper {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 32px;
+        gap: 32px;
+    }
+    .schedule_list_teams {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        min-width: 300px;
+    }
+    .schedule_list_image img {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        background: #fff;
+        border-radius: 50%;
+        border: 2px solid #eee;
+    }
+    .schedulelist_image_home img {
+        background: #fff;
+    }
+    .schedule_list_teams span {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 8px;
+    }
+    .schedule_list_opponent strong {
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 8px;
+    }
+    .schedule_list_location {
+        text-align: left;
+        min-width: 120px;
+        color: #222;
+        font-size: 12px;
+    }
+    .schedule_list_location strong {
+        display: block;
+        font-weight: 600;
+    }
+    .schedule_list_location span {
+        color: #888;
+        font-size: 11px;
+    }
+    .schedule_list_result {
+        text-align: right;
+        min-width: 200px;
+    }
+    .schedule_list_result strong {
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+        display: block;
+        line-height: 1.2;
+    }
+    .schedule_list_bottom {
+        display: flex;
+        align-items: center;
+        background: #f7f7f7;
+        border-radius: 0 0 12px 12px;
+        padding: 0 32px;
+        border-top: 1px solid #e0e0e0;
+        min-height: 48px;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+    .schedule_list_category {
+        color: #888;
+        font-size: 12px;
+        text-decoration: none;
+        flex: 1;
+        padding: 12px 0;
+    }
+    .schedule_list_bottom ul {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .schedule_list_bottom li {
+        margin: 0;
+    }
+    .schedule_list_bottom a {
+        color: #73000A;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .schedule_list_bottom a:hover {
+        text-decoration: underline;
+        color: #a0001a;
+    }
+    /* LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY LOWER BODY  LOWER BODY*/
+    #section-images section {
+        flex: 1;
+        margin: 0 1%;
+        text-align: center;
+    }
 }
 
-/* Desktop */
-@media screen and (min-width: 1000px) {
-    #head-banner{
-    background-color: #73000A;
-    max-height: 150;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    padding: 20px;
-    margin: 0px;
-    }
-    #head-banner li{
-    position: relative;
-    top: -6px;
-    margin: auto;
-    padding: auto;
 
+/* Desktop */
+
+@media screen and (min-width: 1000px) {
+    #section-images,
+    #body-overlay {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
-    #logo{
+    #head-banner {
+        background-color: #73000A;
+        max-height: 150;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding: 20px;
+        margin: 0px;
+    }
+    #head-banner li {
+        position: relative;
+        top: -6px;
+        margin: auto;
+        padding: auto;
+    }
+    #logo {
         position: relative;
         margin: 0;
         padding: 0;
-
     }
-    #Seach{
+    #Seach {
         position: relative;
         margin: 0;
         padding: 0;
         left: 0px;
-
     }
-        #head-banner ul{
+    #head-banner ul {
         position: unset;
         padding: auto;
         margin: auto;
     }
-/* UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER*/
-
-/* LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER*/
-    #main-ul{
+    /* UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER UPPER*/
+    /* LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER LOWER*/
+    #main-ul {
         position: relative;
         left: 300px;
     }
-    #lower-banner li{
-
+    #lower-banner li {
         padding: auto;
     }
-    
+    #date-links,
+    #section-images {
+        padding: 0 60px;
+    }
+    /* SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE*/
+    .schedule_list_top {
+        display: flex;
+        border-radius: 12px 12px 0 0;
+        background: #fff;
+        align-items: stretch;
+        overflow: hidden;
+        margin: 24px 0 0 0;
+        min-height: 120px;
+    }
 
+    .schedule_list_top_wrapper {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 32px;
+        gap: 32px;
+    }
+    .schedule_list_teams {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        min-width: 300px;
+    }
+    .schedule_list_image img {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        background: #fff;
+        border-radius: 50%;
+        border: 2px solid #eee;
+    }
+    .schedule_list_teams span {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 8px;
+    }
+    .schedule_list_opponent strong {
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 8px;
+    }
+    .schedule_list_location {
+        text-align: left;
+        min-width: 120px;
+        font-size: 12px;
+    }
+    .schedule_list_location strong {
+        display: block;
+        font-weight: 600;
+    }
+    .schedule_list_location span {
+        font-size: 11px;
+    }
+    .schedule_list_result {
+        text-align: right;
+        min-width: 200px;
+    }
+    .schedule_list_result strong {
+        font-weight: bold;
+        font-size: 16px;
+        display: block;
+        line-height: 1.2;
+    }
+    .schedule_list_bottom {
+        display: flex;
+        align-items: center;
+        border-radius: 0 0 12px 12px;
+        padding: 0 32px;
+        min-height: 48px;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+    .schedule_list_bottom ul {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    /* SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE SCHEDULE*/
 }
 
-/* Larger Devices */
-@media screen and (min-width: 1700px) {
 
+/* Larger Devices */
+
+@media screen and (min-width: 1700px) {}
+
+header,
+#head-banner,
+#lower-banner {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }

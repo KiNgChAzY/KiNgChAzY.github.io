@@ -37,6 +37,42 @@ header, footer{
     box-shadow: 5px 5px gray;
 }
 
+#item{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 25px;
+    animation-name: bounce;
+    animation-name: color-change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes bounce{
+    0%{
+        top: 0px;
+        background-color: blue;
+    }
+    50%{
+
+    }
+    100%{
+
+    }
+}
+@keyframes color-change{
+    0%{
+        top: 0px;
+        background-color: blue;
+    }
+    50%{
+        
+    }
+    100%{
+
+    }
+}
 /*Navigation*/
 nav ul{
     list-style-type: none;
