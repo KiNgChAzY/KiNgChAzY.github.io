@@ -1,60 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ember Estate's Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <h1>Ember Estate's</h1>
-                </div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="top-bar">
+            <img src="images/ember.jpg" class="logo-img">
+            <div class="site-title"><span>Ember Estates</span></div>
+            <div class="profile">
+                <span class="profile-icon"><img src="images/profile.jpg"></span>
+                <span class="profile-name">ChaseM</span>
+            </div>
         </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="about-us.html">About Us</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="news.html">News</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div class="container">
-            <section class="hero">
-                <h2>Welcome to Ember Estate's</h2>
-                <p>Your trusted partner in real estate excellence</p>
-            </section>
-
-            <section class="featured-properties">
-                <h2>Featured Properties</h2>
-                <div class="property-grid">
-                    <!-- Property cards will go here -->
-                    <div class="property-card">
-                        <div class="property-image">
-                            <!-- Placeholder for property image -->
-                            <div class="placeholder-image"></div>
-                        </div>
-                        <div class="property-info">
-                            <h3>Sample Property</h3>
-                            <p>123 Main Street, City, State</p>
-                            <p>$500,000</p>
-                        </div>
+        <div class="main-content">
+            <div class="h-image">
+                <img src="images/buildings.jpg"/>
+            </div>
+            <div class="info-cards">
+                <a href="news.html" class="info-card-link">
+                    <div class="info-card">
+                        <div class="info-title">New</div>
+                        <button class="info-btn">Information</button>
                     </div>
-                    <!-- More property cards can be added here -->
-                </div>
-            </section>
+                </a>
+                <a href="contact.html" class="info-card-link">
+                    <div class="info-card">
+                        <div class="info-title">Contact</div>
+                        <button class="info-btn">Information</button>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="info-card-link">
+                    <div class="info-card">
+                        <div class="info-title">Portfolio</div>
+                        <button class="info-btn">Information</button>
+                    </div>
+                </a>
+            </div>
         </div>
     </main>
 
     <footer>
-        <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contact Us</h3>
@@ -71,10 +70,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Ember Estate's. All rights reserved.</p>
+                <p>&copy; 2023 Ember Estate's</p>
             </div>
-        </div>
     </footer>
 </body>
-
 </html>

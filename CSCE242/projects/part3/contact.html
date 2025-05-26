@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ember Estate's Contact</title>
+    <title>Ember Estate's Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <h1>Ember Estate's</h1>
-                </div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="top-bar">
+            <img src="images/ember.jpg" class="logo-img">
+            <div class="site-title"><span>Ember Estates</span></div>
+            <div class="profile">
+                <span class="profile-icon"><img src="images/profile.jpg"></span>
+                <span class="profile-name">ChaseM</span>
+            </div>
         </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="about-us.html">About Us</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="news.html">News</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
 
     <main>
         <div class="container">
-            <section class="contact-hero">
-                <h2>Contact Us</h2>
-                <p>Get in touch with our team of real estate experts</p>
-            </section>
-
             <section class="contact-content">
                 <div class="contact-grid">
                     <div class="contact-info">
@@ -49,7 +46,9 @@
                         </div>
                         <div class="info-item">
                             <h4>Office Hours</h4>
-                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed
+                            </p>
                         </div>
                     </div>
 
@@ -58,49 +57,71 @@
                         <form>
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your name">
+                                <input type="text" id="name" name="name" 
+                                placeholder="Your name">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Your email">
+                                <input type="email" id="email" name="email" 
+                                placeholder="Your email">
                             </div>
                             <div class="form-group">
                                 <label for="phone">Phone</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                                <input type="tel" id="phone" name="phone" 
+                                placeholder="Your phone number">
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+                                <textarea id="message" name="message" rows="5" 
+                                placeholder="Your message"></textarea>
                             </div>
                             <button type="submit" class="submit-btn">Send Message</button>
                         </form>
                     </div>
+                </div>
+                <div class="info-cards">
+                    <a href="about-us.html" class="info-card-link">
+                        <div class="info-card">
+                            <img src="images/us.jpg">
+                            <button class="info-btn">About Us</button>
+                        </div>
+                    </a>
+                    <a href="portfolio.html" class="info-card-link">
+                        <div class="info-card">
+                            <img src="images/buildings.jpg">
+                            <button class="info-btn">Portfolio</button>
+                        </div>
+                    </a>
+                    <a href="news.html" class="info-card-link">
+                        <div class="info-card">
+                            <img src="images/work.jpg">
+                            <button class="info-btn">News</button>
+                        </div>
+                    </a>
                 </div>
             </section>
         </div>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>Email: info@emberestates.com</p>
-                    <p>Phone: (555) 123-4567</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@emberestates.com</p>
+                <p>Phone: (555) 123-4567</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ember Estate's. All rights reserved.</p>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Ember Estate's</p>
+        </div>
+</footer>
 </body>
 </html>

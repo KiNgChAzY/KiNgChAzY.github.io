@@ -1,52 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ember Estate's Portfolio</title>
+    <title>Ember Estate's Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <h1>Ember Estate's</h1>
-                </div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="top-bar">
+            <img src="images/ember.jpg" class="logo-img">
+            <div class="site-title"><span>Ember Estates</span></div>
+            <div class="profile">
+                <span class="profile-icon"><img src="images/profile.jpg"></span>
+                <span class="profile-name">ChaseM</span>
+            </div>
         </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="about-us.html">About Us</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="news.html">News</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
 
     <main>
         <div class="container">
-            <section class="portfolio-hero">
-                <h2>Portfolio</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed elit ut magna bibendum scelerisque.</p>
-            </section>
+            <div class="about-text">
+                <h3>Portfolio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    veniam, quis nostrud exercitation ullamco.
+                </p>
+            </div>
             <section class="portfolio-content">
                 <div class="portfolio-grid">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Portfolio 1" class="rounded-image">
+                            <img src="images/buildings.jpg">
                         </div>
                         <div class="portfolio-info">
-                            <h3>$ Jobs</h3>
+                            <h3>Jobs</h3>
                         </div>
                     </div>
                     <div class="portfolio-card">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Portfolio 2" class="rounded-image">
+                            <img src="images/work.jpg">
                         </div>
                         <div class="portfolio-info">
-                            <h3>$ Jobs</h3>
+                            <h3>Jobs</h3>
                         </div>
                     </div>
                 </div>
@@ -55,26 +59,24 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>Email: info@emberestates.com</p>
-                    <p>Phone: (555) 123-4567</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@emberestates.com</p>
+                <p>Phone: (555) 123-4567</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ember Estate's. All rights reserved.</p>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Ember Estate's</p>
+        </div>
+</footer>
 </body>
 </html>
