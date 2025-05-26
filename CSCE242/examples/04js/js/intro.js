@@ -39,7 +39,7 @@ document.getElementById("txt-name").onkeyup = (event) => {
 /* Change happy and sad pictures */
 document.getElementById("btn-happy").onclick = () => {
     const moodImage = document.getElementById("image-mood");
-    moodImage.src = "images/happy.jpg";
+    moodImage.src="images/happy.jpg";
     moodImage.classList.remove("hidden");
 };
 
