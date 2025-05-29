@@ -1,0 +1,114 @@
+body {
+    text-align: center;
+    font-family: Times New Roman, Times, serif;
+    background: #2c5530;
+    color: #e8f5e8;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #90ee90;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #98fb98;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: Times New Roman, Times, serif;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#houses-container {/*https://ilus.ai/generate*/
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.house {
+    width: 120px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.house-body {
+    width: 100px;
+    height: 100px;
+    background: #8fbc8f;
+    border: 3px solid #2e8b57;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.house-roof {
+    width: 0;
+    height: 0;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-bottom: 40px solid #654321;
+    position: absolute;
+    top: 0;
+}
+
+#exercise-section {
+    margin-top: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#stick-figure {
+    width: 100px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#stick-figure img {
+    width: 100px;
+    height: 130px;
+    margin: 0 auto;
+}
+.stick-img, .hidden{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100px; 
+    height: 130px; 
+
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 40px;
+    color: #90ee90;
+    font-style: italic;
+}
