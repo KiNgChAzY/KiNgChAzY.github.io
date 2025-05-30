@@ -1,7 +1,7 @@
-document.getElementById("btn-basic-loop").onclick = () => {
+document.getElementById("btn-basic-loop").onclick=() => {
     const loopsDiv = document.getElementById("basic-loops-list");
-
-    for (let i = 1; i <= 5; i++) {
+    
+    for(let i=1; i <= 5; i++ ){
         const p = document.createElement("p");
         p.innerHTML = i;
         loopsDiv.append(p);
@@ -14,7 +14,7 @@ document.getElementById("btn-loop-input").onclick = () => {
     const endNum = parseInt(document.getElementById("txt-end-loop").value);
     const loopList = document.getElementById("loop-list");
 
-    for (let i = startNum; i <= endNum; i++) {
+    for(let i=startNum; i <= endNum; i++){
         const li = document.createElement("li");
         li.innerHTML = i;
         loopList.append(li);
@@ -27,9 +27,9 @@ let countInterval;
 const displayCount = document.getElementById("dispaly-count");
 
 document.getElementById("btn-start-count").onclick = () => {
-    countInterval = setInterval(() => {
+    countInterval = setInterval(()=>{
         displayCount.innerHTML = count++;
-    }, 300);
+    },300);
 };
 
 document.getElementById("btn-pause-count").onclick = () => {
@@ -43,25 +43,29 @@ document.getElementById("btn-reset-count").onclick = () => {
 
 /* Looping through a list */
 document.getElementById("btn-eat").onclick = () => {
-    document.querySelectorAll("#fruit-list li").forEach((li) => {
+    document.querySelectorAll("#fruit-list li").forEach((li)=>{
         li.innerHTML = `I ate ${li.innerHTML}`;
     });
 }
 
 document.getElementById("btn-highlight").onclick = () => {
-    document.querySelectorAll("#fruit-list li:nth-child(odd)").forEach((li) => {
+    document.querySelectorAll("#fruit-list li:nth-child(odd)").forEach((li)=>{
         li.classList.toggle("highlight");
     });
 }
 
 //weather buttons
-document.querySelectorAll("#weather-buttons button").forEach((button) => {
+document.querySelectorAll("#weather-buttons button").forEach((button)=>{
     button.onclick = () => {
         document.getElementById("weather-message").innerHTML =
-            `I am a ${button.innerHTML}`;
-        document.querySelectorAll("#weather-buttons button").forEach((otherButton) => {
+        `I am a ${button.innerHTML}`;
+
+        //remove highlight from all buttons
+        document.querySelectorAll("#weather-buttons button").forEach((otherButton)=>{
             otherButton.classList.remove("highlight");
         });
+
+        //add highlight to only the button you clicked
         button.classList.add("highlight");
-    }
+    };
 });

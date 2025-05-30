@@ -8,10 +8,10 @@ document.getElementById("btn-show-toys").onclick = () => {
     }*/
 
     //i parameter is optional
-    toys.forEach((toy, i) => {
-        li = document.createElement("li");
-        li.innerHTML = toy;
-        ul.append(li);
+    toys.forEach((toy, i)=>{
+       li = document.createElement("li");
+       li.innerHTML = toy;
+       ul.append(li);
     });
 }
 
@@ -26,7 +26,7 @@ document.getElementById("btn-show-toy-table").onclick = () => {
 
     const table = document.getElementById("toy-table");
 
-    for (let toy in toys) {
+    for(let toy in toys){
         const price = toys[toy];
         let tr = document.createElement("tr");
         table.append(tr);
@@ -36,5 +36,15 @@ document.getElementById("btn-show-toy-table").onclick = () => {
         let td2 = document.createElement("td");
         td2.innerHTML = price;
         tr.append(td2);
+
+        tr.onclick = () => {
+            document.getElementById("modal").classList.remove("hidden");
+            document.querySelector("#modal h1").innerHTML = toy;
+            document.querySelector("#modal p").innerHTML = `$${price}`;
+        }
     }
 };
+
+document.getElementById("close").onclick = () => {
+    document.getElementById("modal").classList.add("hidden");
+}

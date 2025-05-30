@@ -4,7 +4,7 @@ document.getElementById("right-arrow").onclick = (e) => {
     let nextSlide = currentSlide.nextElementSibling;
 
     //if we got to the end of the slideshow
-    if (nextSlide == null) {
+    if(nextSlide == null){
         nextSlide = document.querySelector("#slides :first-child");
     }
 
@@ -17,12 +17,22 @@ document.getElementById("left-arrow").onclick = (e) => {
     let prevSlide = currentSlide.previousElementSibling;
 
     //if we got to the end of the slideshow
-    if (prevSlide == null) {
+    if(prevSlide == null){
         prevSlide = document.querySelector("#slides :last-child");
     }
 
     switchSlides(currentSlide, prevSlide);
 };
+
+document.querySelectorAll("#thumbnails img").forEach((img, i)=>{
+    img.onclick = () => {
+        const currentSlide = getCurrentSlide();
+        const nextSlide = document.querySelector(`#slides img:nth-child(${i+1})`);
+        console.log(nextSlide);
+        switchSlides(currentSlide, nextSlide);
+    }
+});
+
 
 const getCurrentSlide = () => {
     return document.querySelector("#slides :not(.hidden)");
