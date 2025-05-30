@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>Ember Estate's News</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="images/ember.jpg" class="logo-img" alt="Ember Estates Logo">
+            <div class="site-title"><span>Ember Estates</span></div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="profile">
+                <span class="profile-icon"><img src="images/profile.jpg" alt="Profile Picture"></span>
+                <span class="profile-name">ChaseM</span>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="about-us.html">About Us</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="news.html">News</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="news-content">
+                <div class="news-header">
+                    <h1>Latest News & Updates</h1>
+                    <p>Stay informed about the latest real estate trends, market insights, and 
+                        company news from Ember Estates.</p>
+                </div>
+                
+                <div class="news-grid">
+                    <article class="news-article">
+                        <div class="article-image">
+                            <img src="images/Downtown Real Estate Market Shows Strong Growth.jpg" 
+                            alt="Downtown Real Estate Development">
+                        </div><!--https://www.noradarealestate.com/blog/charleston-sc-real-estate-market/-->
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date">March 15, 2024</span>
+                                <span class="category">Market Trends</span>
+                            </div>
+                            <h2>Downtown Real Estate Market Shows Strong Growth</h2>
+                            <p>The downtown real estate market continues to show remarkable growth, with
+                                 property values increasing by 15% in the last quarter. This trend is 
+                                 driven by increased demand for urban living spaces and new commercial 
+                                 developments...</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="news-article">
+                        <div class="article-image">
+                            <img src="images/Ember Estates Launches Sustainable Housing Initiative.jpg" 
+                            alt="Sustainable Housing Initiative">
+                            <!--https://www.wuwf.org/florida-news/2022-03-23/escambia-county-launches-newest-affordable-housing-project-->
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date">March 10, 2024</span>
+                                <span class="category">Company News</span>
+                            </div>
+                            <h2>Ember Estates Launches Sustainable Housing Initiative</h2>
+                            <p>We're proud to announce our new sustainable housing initiative, focusing on 
+                                eco-friendly building practices and energy-efficient homes. This program 
+                                aims to reduce carbon footprint while providing modern, comfortable living 
+                                spaces...</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="news-article">
+                        <div class="article-image">
+                            <img src="images/Top 5 Real Estate Investment Strategies for 2024.webp" alt="Real Estate Investment Tips">
+                        </div><!--https://www.goodfinancialcents.com/best-investment-strategies/-->
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="date">March 5, 2024</span>
+                                <span class="category">Investment Tips</span>
+                            </div>
+                            <h2>Top 4 Real Estate Investment Strategies for 2024</h2>
+                            <p>As we move through 2024 we look back and learn from 2023, the real estate market presents new opportunities
+                                 for investors. From residential properties to commercial developments, we
+                                  explore the most promising investment strategies for the current market...</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@emberestates.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ember Estates</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
