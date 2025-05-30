@@ -8,9 +8,9 @@ class ImageItem {
         const container = document.createElement("div");
         container.classList.add("image-container");
 
-        const img = document.createElement("img");
-        imgSRC = this.imageUrl;
-        imgALT = this.title;
+        const img = document.createElement("img");//https://www.w3schools.com/js/js_htmldom_html.asp
+        img.src = this.imageUrl;
+        img.alt = this.title;
 
         const overlay = document.createElement("div");
         overlay.classList.add("overlay");
@@ -33,6 +33,7 @@ class ImageItem {
         return container;
     }
 }
+
 const imageItems = [//Took out a zip because I couldn't make it work in time
     new ImageItem("It's Raining", "images/rain.jpg"),
     new ImageItem("Work at Home", "images/work.jpg"),
@@ -46,6 +47,7 @@ const gallery = document.getElementById("image-gallery");
 imageItems.forEach(item => {
     gallery.appendChild(item.getItem());
 });
+
 const closeButton = document.getElementById("close");
 closeButton.onclick = () => {
     const modal = document.getElementById("modal");
