@@ -1,8 +1,240 @@
 body {
     text-align: center;
     font-family: Times New Roman, Times, serif;
-    background: #171618;
-    color:  #dca54d;
+    background: #f7e83a;
+    color: #111a3b;
     margin: 0;
     padding: 20px;
+}
+
+header {
+    background:  #f7e83a;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #111a3b;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #111a3b;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#gallery {
+    background-color: #111a3b;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #f7e83a;
+}
+
+#gallery h3 {
+    color: #f7e83a;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.gallery-area {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 5px;
+}
+
+.gallery-item {
+    position: relative;
+    background-color: #111a3b;
+    border: 5px solid #f7e83a;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.item-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item:hover .item-image img {
+    transform: scale(1.05);
+}
+
+.overlay { /* https://www.w3schools.com */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.w3-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+
+}
+
+.modal-content {
+    border: 1px solid #111a3b;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    background-color: #f7e83a;
+    border-radius: 8px;
+    margin: 10% auto;
+    max-width:600px;
+}
+
+.w3-container {
+    padding: 15px;
+
+}
+
+.w3-border-top {
+    border-top: 1px solid #f7e83a;
+}
+
+.w3-padding-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.w3-light-grey {
+    background-color: #f0f0f0;
+}
+
+.close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #111a3b;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+}
+
+#modal-details {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.modal-image-area {
+    flex: 0 0 300px;
+    min-width: 300px;
+}
+
+.modal-text-area {
+    flex: 1;
+    min-width: 250px;
+}
+
+#modal-details h3 {
+    color: #111a3b;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 30px;
+    text-align: left;
+}
+
+#modal-details p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+#modal-details strong {
+    color: #111a3b;
+}
+
+#modal-image {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+#modal-text{
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    color: #111a3b;
+}
+
+section a {
+    color: #111a3b;
+}
+
+section a:hover {
+    color: #111a3b;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    #modal-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .modal-image-area {
+        flex: none;
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 2% auto;
+    }
+
+    .gallery-item {
+        max-width: 100%;
+    }
 }
