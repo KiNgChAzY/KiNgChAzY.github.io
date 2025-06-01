@@ -20,6 +20,7 @@ h2 {
     color: #dca54d;
     margin-bottom: 20px;
 }
+
 #image-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +52,8 @@ h2 {
     border-radius: 5px;
 }
 
-.overlay {          /*https://www.w3schools.com*/
+.overlay {
+    /*https://www.w3schools.com*/
     position: absolute;
     bottom: 0;
     left: 0;
@@ -88,7 +90,7 @@ h2 {
     background-color: #171618;
     color: #dca54d;
     border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     border: 5px solid #dca54d;
     max-width: 82%;
     max-height: 82%;
@@ -131,8 +133,7 @@ section a {
     color: #dca54d;
 }
 
-section a:hover{
+section a:hover {
     color: white;
     text-decoration: none;
 }
-
