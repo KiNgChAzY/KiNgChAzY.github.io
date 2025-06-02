@@ -28,21 +28,21 @@ class Hamburger {
         itemSection.appendChild(imageContainer);
 
         image.onclick = () => {
-            document.getElementById('itemModal').style.display = 'block';
-            document.getElementById('modal-image').src = this.imageUrl;
-            document.getElementById('modal-image').alt = this.name;
-            
-            const modalTextContent = document.getElementById('modal-text');
-            modalTextContent.innerHTML = '';
-            
+            document.getElementById("itemModal").style.display = "block";
+            document.getElementById("modal-image").src = this.imageUrl;
+            document.getElementById("modal-image").alt = this.name;
+
+            const modalTextContent = document.getElementById("modal-text");
+            modalTextContent.innerHTML = "";
+
             const h3 = document.createElement("h3");
             h3.textContent = this.name;
             modalTextContent.appendChild(h3);
-            
+
             modalTextContent.appendChild(this.paragraph("Meat", this.meat));
             modalTextContent.appendChild(this.paragraph("Bun", this.bun));
-            modalTextContent.appendChild(this.paragraph("Sides", this.sides.join(', ')));
-            modalTextContent.appendChild(this.paragraph("Toppings", this.toppings.join(', ')));
+            modalTextContent.appendChild(this.paragraph("Sides", this.sides.join(", ")));
+            modalTextContent.appendChild(this.paragraph("Toppings", this.toppings.join(", ")));
         };
 
         return itemSection;
@@ -56,16 +56,16 @@ class Hamburger {
 }
 
 const hamburgers = [
-    new Hamburger('Classic Cheeseburger', 'images/cheese.jpg', 'Beef Patty', ['American Cheese'], 'Brioche Bun', ['Fries']),
-    new Hamburger('Dog Burger', 'images/dog-burger.jpg', 'Beef Patty', ['Stuffed-Bacon', 'Cheddar Cheese', 'Lettuce'], 'Potato Bun', ['none']),
-    new Hamburger('Classic Burger', 'images/one-patties.jpg', 'Beef Patty', ['American Cheese', 'Lettuce', 'Tomato','Caramelized Onions'], 'Sesame Seed Bun', ['Sweet Potato Fries']),
-    new Hamburger('Double Patty', 'images/two-patties.jpg', 'Two Beef Patties', ['Provolone Cheese', 'Lettuce', 'Tomato',"Onions", 'Special Sauce'], 'Brioche Bun', ['Fries'])
+    new Hamburger("Classic Cheeseburger", "images/cheese.jpg", "Beef Patty", ["American Cheese"], "Brioche Bun", ["Fries"]),
+    new Hamburger("Dog Burger", "images/dog-burger.jpg", "Beef Patty", ["Stuffed-Bacon", "Cheddar Cheese", "Lettuce"], "Potato Bun", ["none"]),
+    new Hamburger("Classic Burger", "images/one-patties.jpg", "Beef Patty", ["American Cheese", "Lettuce", "Tomato", "Caramelized Onions"], "Sesame Seed Bun", ["Sweet Potato Fries"]),
+    new Hamburger("Double Patty", "images/two-patties.jpg", "Two Beef Patties", ["Provolone Cheese", "Lettuce", "Tomato", "Onions", "Special Sauce"], "Brioche Bun", ["Fries"])
 ];
 
 hamburgers.forEach(hamburger => {
-    document.getElementById('item').appendChild(hamburger.item);
+    document.getElementById("item").appendChild(hamburger.item);
 });
 
-document.querySelector('.close').onclick = () => {
-    document.getElementById('itemModal').style.display = 'none';
+document.querySelector(".close").onclick = () => {
+    document.getElementById("itemModal").style.display = "none";
 };
