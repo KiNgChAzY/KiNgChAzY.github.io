@@ -8,7 +8,7 @@
         "Property-Type": "Condo",
         "Year-Built": "2010",
         "Lot Size": "1Acer",
-        "Features": "Pool, fireplace, and garage",
+        "Features": ["Pool", "Fireplace", "Garage"],
         "Photos": "URLs"
     },
     {
@@ -20,9 +20,9 @@
         "Bedrooms&Bathrooms": "",
         "Property-Type": "",
         "Year-Built": "",
-        "Lot Size": "2000sqft",
-        "Features": "Pool, fireplace, and garage",
-        "Photos": "URLs"
+        "Lot Size": "",
+        "Features": [""],
+        "Photos": ""
     },
     {
         "_id": 3,
