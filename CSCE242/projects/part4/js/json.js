@@ -1,13 +1,13 @@
 [{
         "_id": 1,
-        "Address": "124 easy street",
+        "Address": "124 Easy Street",
         "Listing-Price": "575,000$",
         "Stories": "2",
         "Square-Footage": "2000",
         "Bedrooms&Bathrooms": "3-2",
         "Property-Type": "Condo",
         "Year-Built": 2010,
-        "Lot-Size": "1Acer",
+        "Lot-Size": "1Acre",
         "Features": ["Pool", "Fireplace", "Garage"],
         "Photos": "URLs"
     },
