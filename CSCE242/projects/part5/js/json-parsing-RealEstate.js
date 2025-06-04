@@ -5,7 +5,7 @@
 // Each listing shows property details including title, price, features, and an image
 
 // URL to the JSON file on GitHub
-const jsonUrl = "https://kingchazy.github.io/CSCE242/projects/part5/js/listings.json";
+const Url = "https://kingchazy.github.io/CSCE242/projects/part5/js/listings.json";
 
 const getListings = async() => {
     try {
