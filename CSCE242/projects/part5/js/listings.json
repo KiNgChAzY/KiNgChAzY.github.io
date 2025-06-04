@@ -10,7 +10,7 @@
         "property_type": "Condo",
         "year_built": 2020,
         "features": ["Pool", "Gym", "Parking", "Rooftop Deck"],
-        "img_name": "images/Downtown Office Complex.jpg",
+        "img_name": "images/Luxury Downtown Condo.jpg",
         "description": "Stunning downtown condo with modern amenities and city views."
     },
     {
@@ -24,7 +24,7 @@
         "property_type": "Single Family",
         "year_built": 2018,
         "features": ["Private Dock", "Wine Cellar", "Smart Home", "Ocean View"],
-        "img_name": "images/Luxury Apartment Complex.jpg",
+        "img_name": "images/Waterfront Estate.jpg",
         "description": "Exclusive waterfront property with private dock and panoramic ocean views."
     },
     {
@@ -38,7 +38,7 @@
         "property_type": "Commercial",
         "year_built": 2022,
         "features": ["Conference Rooms", "High-Speed Internet", "Security System", "Parking"],
-        "img_name": "images/Downtown Office Complex.jpg",
+        "img_name": "images/Modern Office Space.webp",
         "description": "State-of-the-art office space in prime business district."
     },
     {
@@ -52,7 +52,7 @@
         "property_type": "Single Family",
         "year_built": 2015,
         "features": ["Large Backyard", "Garage", "Fireplace", "Updated Kitchen"],
-        "img_name": "images/buildings.jpg",
+        "img_name": "images/Suburban Family Home.jpeg",
         "description": "Spacious family home in quiet suburban neighborhood."
     },
     {
@@ -66,7 +66,7 @@
         "property_type": "Loft",
         "year_built": 2019,
         "features": ["High Ceilings", "Exposed Brick", "Modern Appliances", "City Views"],
-        "img_name": "images/Luxury Apartment Complex.jpg",
+        "img_name": "images/Urban Loft.jpg",
         "description": "Contemporary loft in historic industrial building."
     },
     {
@@ -80,7 +80,7 @@
         "property_type": "Penthouse",
         "year_built": 2021,
         "features": ["Private Elevator", "360° Views", "Wine Room", "Smart Home"],
-        "img_name": "images/Downtown Office Complex.jpg",
+        "img_name": "images/Luxury Penthouse.jpg",
         "description": "Exclusive penthouse with panoramic city views."
     },
     {
@@ -94,7 +94,7 @@
         "property_type": "Multi-Family",
         "year_built": 2017,
         "features": ["Separate Units", "Laundry Room", "Storage", "High ROI"],
-        "img_name": "images/buildings.jpg",
+        "img_name": "images/Investment Property.webp",
         "description": "Prime investment property with multiple rental units."
     },
     {
@@ -108,7 +108,7 @@
         "property_type": "Single Family",
         "year_built": 2023,
         "features": ["Solar Panels", "Rainwater Collection", "Energy Efficient", "Garden"],
-        "img_name": "images/Luxury Apartment Complex.jpg",
+        "img_name": "images/Eco-Friendly Home.jpeg",
         "description": "Modern eco-friendly home with sustainable features."
     }
 ] 
