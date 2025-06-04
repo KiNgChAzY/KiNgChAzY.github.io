@@ -1,15 +1,14 @@
 //https://kingchazy.github.io/CSCE242/projects/part5/js/json.js
 
-// This file fetches and displays real estate listings from JSON
-// The data is displayed on the portfolio.html page in the listings section
-// Each listing shows property details including title, price, features, and an image
-
-// URL to the JSON file on GitHub
-const Url = "https://kingchazy.github.io/CSCE242/projects/part5/js/listings.json";
+// This code gets and shows property listings from a JSON file
+// It puts the listings on the portfolio.html page in the listings area
+// Each property shows: name, cost, details, and picture
 
 const getListings = async() => {
+    const url = "https://kingchazy.github.io/CSCE242/projects/part5/js/listings.json";
+
     try {
-        const response = await fetch(jsonUrl);
+        const response = await fetch(url);
         return response.json();
     } catch (error) {
         console.log(error);
@@ -18,12 +17,12 @@ const getListings = async() => {
 
 const showListings = async() => {
     const properties = await getListings();
-    const listingsGrid = document.querySelector("#the-listings");
+    const listings = document.querySelector("#the-listings");
 
     properties.forEach((property) => {
         const article = document.createElement("article");
         article.className = "news-article";
-        listingsGrid.append(article);
+        listings.append(article);
 
         const imageDiv = document.createElement("div");
         imageDiv.className = "article-image";
@@ -34,11 +33,11 @@ const showListings = async() => {
         article.append(imageDiv);
 
         const contentDiv = document.createElement("div");
-        contentDiv.className = "article-content";
+        contentDiv.className = "article-div";
         article.append(contentDiv);
 
         const mDiv = document.createElement("div");
-        mDiv.className = "article-meta";
+        mDiv.className = "article";
         const category = document.createElement("span");
         category.className = "category";
         category.innerHTML = property.property_type;
@@ -55,7 +54,7 @@ const showListings = async() => {
         const p = document.createElement("p");
         p.innerHTML = property.description;
         contentDiv.append(p);
-s
+
         const detailsDiv = document.createElement("div");
         detailsDiv.className = "property-details";
         
@@ -64,7 +63,7 @@ s
         detailsDiv.append(addressP);
 
         const roomsP = document.createElement("p");
-        roomsP.innerHTML = `<strong>Bedrooms:</strong> ${property.bedrooms} | <strong>Bathrooms:</strong> ${property.bathrooms}`;
+        roomsP.innerHTML = `<strong>Bedrooms:</strong> ${property.bedrooms} & <strong>Bathrooms:</strong> ${property.bathrooms}`;
         detailsDiv.append(roomsP);
 
         const sqftP = document.createElement("p");
@@ -80,12 +79,6 @@ s
         detailsDiv.append(featuresP);
 
         contentDiv.append(detailsDiv);
-
-        const readMore = document.createElement("a");
-        readMore.href = "#";
-        readMore.className = "read-more";
-        readMore.innerHTML = "View Details";
-        contentDiv.append(readMore);
     });
 };
 
